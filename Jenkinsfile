@@ -66,7 +66,6 @@ pipeline {
       when {
         expression {
           return env.GIT_BRANCH == "origin/master"
-          echo "!!!!!!!!!"
         }
       }
       steps {
