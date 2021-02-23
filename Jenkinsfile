@@ -70,6 +70,7 @@ pipeline {
       }
       steps {
         withDockerRegistry(credentialsId: 'dockerhubid', url:'') {
+          sh 'docker login'
           sh 'docker push yana96docker/result'
         }
       }
