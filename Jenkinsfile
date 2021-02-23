@@ -70,7 +70,7 @@ pipeline {
       }
       steps {
         withDockerRegistry(credentialsId: 'dockerhubid', url:'') {
-          sh 'docker push Yana-Git/result'
+          sh 'docker push yana96docker/result'
         }
       }
     }
@@ -82,7 +82,7 @@ pipeline {
       }
       steps {
         withDockerRegistry(credentialsId: 'dockerhubid', url:'') {
-          sh 'docker push Yana-Git/vote'
+          sh 'docker push yana96docker/vote'
         }
       }
     }
@@ -94,7 +94,7 @@ pipeline {
       }
       steps {
         withDockerRegistry(credentialsId: 'dockerhubid', url:'') {
-          sh 'docker push Yana-Git/worker'
+          sh 'docker push yana96docker/worker'
         }
       }
     }
