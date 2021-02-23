@@ -6,8 +6,8 @@ services:
     container_name: cypress_e2e
     working_dir: /e2e
     volumes:
-      - ./voting_app_cypress/cypress.json:/e2e/cypress.json
-      - ./voting_app_cypress/cypress/fixtures:/e2e/cypress/fixtures
-      - ./voting_app_cypress/cypress/support:/e2e/cypress/support
-      - ./voting_app_cypress/cypress/plugins:/e2e/cypress/plugins
-      - ./voting_app_cypress/integration:/e2e/cypress/integration
+      - ./BigCommerce/cypress.json:/e2e/cypress.json
+      - ./BigCommerce/cypress/fixtures:/e2e/cypress/fixtures
+      - ./BigCommerce/cypress/support:/e2e/cypress/support
+      - ./BigCommerce/cypress/plugins:/e2e/cypress/plugins
+      - ./BigCommerce/integration:/e2e/cypress/integration
