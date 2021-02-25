@@ -1,6 +1,6 @@
 set -x
 
-cd BigCommerce
+cd voting_app_cypress
 
 npm install
 npx cypress run
