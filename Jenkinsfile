@@ -33,7 +33,7 @@ pipeline {
     stage('Build Result Image') {
       steps {
         sh 'printenv'
-        sh 'docker build -t yana96dockerg/result ./result'
+        sh 'docker build -t yana96docker/result ./result'
         echo 'Build result completed'
       }
     } 
