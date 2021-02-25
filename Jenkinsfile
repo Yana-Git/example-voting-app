@@ -69,7 +69,7 @@ pipeline {
         }
       }
       steps {
-        withDockerRegistry(credentialsId: 'yana96docker', url:'') {
+        withDockerRegistry(credentialsId: 'yanatest', url:'') {
           sh 'docker push yana96docker/result'
         }
       }
@@ -81,7 +81,7 @@ pipeline {
         }
       }
       steps {
-        withDockerRegistry(credentialsId: 'yana96docker', url:'') {
+        withDockerRegistry(credentialsId: 'yanatest', url:'') {
           sh 'docker push yana96docker/vote'
         }
       }
@@ -93,7 +93,7 @@ pipeline {
         }
       }
       steps {
-        withDockerRegistry(credentialsId: 'yana96docker', url:'') {
+        withDockerRegistry(credentialsId: 'yanatest', url:'') {
           sh 'docker push yana96docker/worker'
         }
       }
